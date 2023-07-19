@@ -1,0 +1,30 @@
+# Git Ignore config
+
+# Node files
+node_modules/
+npm-debug.log*
+npm-debug.log
+.npm
+
+# Build files
+build/
+
+# Env. files
+.env
+.env.test
+.env.production
+
+# Package.json files
+package-lock.json
+package.json
+.json
+
+# MacOS files
+.DS_Store
+
+# ESlint Cache
+.eslintcache
+
+# Logs
+logs/
+*.log
