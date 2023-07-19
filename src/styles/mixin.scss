@@ -1,0 +1,12 @@
+// Declaraciones globales
+
+ // Display
+@mixin Display ( $display, $flexFlow, $justifyContent, $alignItems, $gap : false) {
+    display: $display;
+    flex-flow: $flexFlow;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    @if $gap {
+        gap: $gap;
+    };
+}

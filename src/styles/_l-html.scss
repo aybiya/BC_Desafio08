@@ -1,0 +1,54 @@
+/* // html */
+@use './h-fonts.scss' as F;
+@use './h-colors.scss' as C;
+
+
+html{
+    font-family: F.$mainFont;
+    font-size: F.$fontSize;
+    font-weight: F.$textRegular;
+    line-height: F.$lineHeight;
+
+    dt {
+        font-size: F.$textSm;
+        color: C.$secondaryColor;
+        font-weight: F.$textBold;
+    }
+    
+    dd {
+        font-size: F.$textSm;
+        color: C.$neutralColor2;
+        font-weight: F.$textLight;
+    }
+
+    h1, h2{
+        font-family: F.$titleFont;
+        font-weight: F.$textBlack;
+    }
+
+    h1{
+        font-size: F.$textLg;
+        color: C.$neutralColor3;
+    }
+
+    h2{
+        font-size: F.$textMd;
+        color: C.$primaryColor;
+    }
+
+    body {
+        background-color: C.$neutralColor3;
+        
+        section{
+            background-color: C.$secondaryColor;
+            margin: 5rem;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
+
+            header{
+                text-align: center;
+            }
+        }
+    }
+} 

@@ -1,0 +1,33 @@
+/* // Main */
+
+@use './h-fonts' as F;
+@use './h-colors' as C;
+@use './mixin.scss' as M;
+
+main {
+
+    margin: 1rem;
+    padding: 2rem 3rem;
+    text-align: center;
+        
+    h2{
+        padding-bottom: 1.5rem;
+    }
+    
+
+    @include M.Display( flex, row, space-around, left, 1rem);
+
+    article{
+        padding: 3rem 3rem;
+        background-color: C.$neutralColor2;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+        dd{
+            // border-bottom: solid C.$secondaryColor 2px;
+            background-color: C.$primaryColor;
+            border-radius: 3px;
+        }
+    }
+        
+} 
